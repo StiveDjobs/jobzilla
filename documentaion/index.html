@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Documentation - Jobzilla – Job Board React Template</title>
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body data-spy="scroll" data-target=".sidebar" data-offset="200">
+    <!-- Sidebar -->
+    <aside class="sidebar sidebar-boxed sidebar-dark">
+        <div class="l-top-logo"><img src="images/logo-dark.png" alt=""></div>
+        <ul class="nav sidenav dropable">
+            <li><a href="#supports" title="Support">Support</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#getting_started" title="Getting Started">File & Folder Structure</a></li>
+            <li>
+                <a href="#head_css_structure" title="HEAD CSS Structure">Installation</a>
+                <ol>
+                    <li class="sub_ol"><a href="#node-2">Node</a></li>
+                    <li class="sub_ol"><a href="#npm-3">NPM</a></li>
+                    <li class="sub_ol"><a href="#react">React</a></li>
+                    <li class="sub_ol"><a href="#component">Adding New Component</a></li>
+                </ol>
+            </li>
+            <li><a href="#browser-support">browser-support</a></li>
+            <li><a href="#Source_Credits">Source & Credits</a></li>
+        </ul>
+    </aside>
+    <!-- END Sidebar -->
+    <main class="container-fluid">
+        <span class="react-spin-icon"><img src="images/react-icon.png" class="fa-spin"></span>
+        <!-- Main content -->
+        <article class="main-content" role="main">
+            <!--Support-->
+            <section id="supports" class="text-center" style="background-color:#fff;">
+                <p> If you have any questions, please use our profile contact form on Envato ( <a target="_blank" href="https://themeforest.net/user/thewebmax">https://themeforest.net/user/thewebmax</a> ).</p>
+                <p>This documentation is September 2023</p>
+                <p>Thank you for purchasing this React template.</p>
+                <p><strong>If you like this template, Please support us by rating this template with 5 stars </strong>
+                    <span><i class="fa fa-star" style="color:#ff7c0c"></i><i class="fa fa-star" style="color:#ff7c0c"></i><i class="fa fa-star" style="color:#ff7c0c"></i><i class="fa fa-star" style="color:#ff7c0c"></i><i class="fa fa-star" style="color:#ff7c0c"></i></span> </p>
+                    <p>We hope you found this document helpful. Thank you!</p>
+                </section>
+                <!--Introduction-->
+                <section id="introduction">
+                    <div class="page-header">
+                        <h4>Introduction</h4>
+                    </div>
+                    <p>
+                        <b>Jobzilla – Job Board React Template</b> specifically for advertising vacancies, finding suitable staff, receiving employer’s resumes and CV, It is designed keeping in mind the requirements of such market places. You can use this beautiful template. Employers and Candidates feel easy and convenient to sign up, login to find jobs, post jobs, job details, manage their profiles, resume, applications from Dashboard.
+                    </p>
+                    <p>This document will describe whole <b>Jobzilla template</b> with an application structure and guide how to use all the modules. This will beneficial for anyone who can update the template as per own unique need.</p>
+                    <p>We have used very impressive and vast technology named <b>“React JS”</b>, It provides extremely high speed performance through single page application and feel like a desktop application in web based application.</p>
+                </section>
+                <!--File & Folder Structure-->
+                <section id="getting_started">
+                    <div class="page-header">
+                        <h4>File & Folder Structure</h4>
+                    </div>
+                    <p>This describes the file structure of <b>Jobzilla React</b> application template.</p>
+                    <table class="table table-bordered" style="width: 100%; height: 890px;">
+                        <tbody>
+                            <tr style="height: 26px;">
+                                <td style="width: 30%; height: 26px;"><span style="font-size: 10pt;"><strong>Path</strong></span></td>
+                                <td style="height: 26px;"><span style="font-size: 10pt;"><strong>Description</strong></span></td>
+                            </tr>
+
+                            <tr style="height: 24px;">
+                                <td style="height: 24px;"><span style="color: #800080;">&ndash; public</span></td>
+                                <td style="height: 24px;">This folder contains <strong>CSS, JS, Images, and Plugins</strong> files of application.</td>
+                            </tr>
+                            <tr style="height: 24px;">
+                                <td style="height: 24px;"><span style="color: #800080;">&nbsp; &nbsp; &nbsp; &mdash; assets</span></td>
+                                <td style="height: 24px;">This contains necessary <strong>Assets</strong> used for application.</td>
+                            </tr>
+                            <tr style="height: 24px;">
+                                <td style="height: 24px;"><span style="color: #800080;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &mdash; css</span></td>
+                                <td style="height: 24px;">This contains <strong>CSS</strong>. CSS stands for <strong>Cascading Style Sheets</strong>. It&rsquo;s used to define <strong>styles for web pages</strong>&nbsp;including the design, layout, and variations in display for different devices and screen sizes.</td>
+                            </tr>
+                            <tr style="height: 24px;">
+                                <td style="height: 24px;"><span style="color: #800080;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &mdash; files</span></td>
+                                <td style="height: 24px;">The directory contains <strong>sample</strong> static pdf <strong>files</strong>.</td>
+                            </tr>
+                            <tr style="height: 24px;">
+                                <td style="height: 24px;"><span style="color: #800080;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &mdash; fonts</span></td>
+                                <td style="height: 24px;">This contains <strong>fonts including font awesome library</strong> used for the application.</td>
+                            </tr>
+                            <tr style="height: 24px;">
+                                <td style="height: 24px;"><span style="color: #800080;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &mdash; images</span></td>
+                                <td style="height: 24px;">This contains <strong>images</strong> used for the application.</td>
+                            </tr>
+                            <tr style="height: 24px;">
+                                <td style="height: 24px;"><span style="color: #800080;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &mdash; js</span></td>
+                                <td style="height: 24px;">This contains <strong>third parties JavaScript and site js files</strong> used for the application.</td>
+                            </tr>
+                                <tr style="height: 24px;">
+                                    <td style="height: 24px;"><span style="color: #800080;">&nbsp; &nbsp; &nbsp; &mdash; handlers</span></td>
+                                    <td style="height: 24px;">This directory contains <strong>Handlers</strong> for specific operations in application.</td>
+                                </tr>
+                                <tr style="height: 24px;">
+                                    <td style="height: 24px;"><span style="color: #800080;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &mdash; phpmailer</span></td>
+                                    <td style="height: 24px;">This directory contains necessary files for <strong>php eMail operations</strong></td>
+                                </tr>
+                                <tr style="height: 24px;">
+                                    <td style="height: 24px;"><span style="color: #800080;">&nbsp; &nbsp; &nbsp; &mdash; index.html</span></td>
+                                    <td style="height: 24px;">The index.html lives at the <strong>root</strong> of the front-end structure.</td>
+                                </tr>
+
+                                <tr style="height: 24px;">
+                                    <td style="height: 24px;"><span style="color: #800080;">&ndash; src</span></td>
+                                    <td style="height: 24px;">Entire <strong>source code of the application</strong> is available in this folder so it is the <strong>main folder</strong>.</td>
+                                </tr>
+                                <tr style="height: 24px;">
+                                    <td style="height: 24px;"><span style="color: #800080;">&nbsp; &nbsp; &nbsp; &mdash; app</span></td>
+                                    <td style="height: 24px;">Sub-directory of 'src', containing pages/components</td>
+                                </tr>
+                                <tr style="height: 24px;">
+                                    <td style="height: 24px;"><span style="color: #800080;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &mdash; common</span></td>
+                                    <td style="height: 24px;">
+                                        The directory contains all <strong>common elements/popups/sections/menus</strong> used inside different pannels.
+                                    </td>
+                                </tr>
+                                <tr style="height: 24px;">
+                                    <td style="height: 24px;"><span style="color: #800080;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &mdash; form-processing</span></td>
+                                    <td style="height: 24px;">Contains <strong>data handling</strong>/processing/filtering <strong>logics</strong> for template forms.</td>
+                                </tr>
+                                <tr style="height: 24px;">
+                                    <td style="height: 24px;"><span style="color: #800080;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &mdash; pannels</span></td>
+                                    <td style="height: 24px;">This directory contains all <strong>child/sub modules</strong> or sub-sites of this template.</td>
+                                </tr>
+                                <tr style="height: 24px;">
+                                    <td style="height: 24px;"><span style="color: #800080;">&nbsp; &nbsp; &nbsp; &mdash; globals</span></td>
+                                    <td style="height: 24px;">All global data/constants for the tempalate will go here.</td>
+                                </tr>
+                                <tr style="height: 24px;">
+                                    <td style="height: 24px;"><span style="color: #800080;">&nbsp; &nbsp; &nbsp; &mdash; layouts</span></td>
+                                    <td style="height: 24px;">The layout directory contains a <strong>brief structure or data flow framing</strong>, can be used with any component to contain inside or any component can be used with the specific layout as child.</td>
+                                </tr>
+                                <tr style="height: 24px;">
+                                    <td style="height: 24px;"><span style="color: #800080;">&nbsp; &nbsp; &nbsp; &mdash; routing</span></td>
+                                    <td style="height: 24px;">This directory contains data flow routing or components accessing flow for the template.</td>
+                                </tr>
+                                <tr style="height: 24px;">
+                                    <td style="height: 24px;"><span style="color: #800080;">&nbsp; &nbsp; &nbsp; &mdash; App.js</span></td>
+                                    <td style="height: 24px;">This is a <strong>main</strong> application <strong>java script</strong>&nbsp; file.</td>
+                                </tr>
+                                <tr style="height: 24px;">
+                                    <td style="height: 24px;"><span style="color: #800080;">&nbsp; &nbsp; &nbsp; &mdash; Index.js</span></td>
+                                    <td style="height: 24px;">Whenever an application is run, the <strong>First</strong> Index.js file is a load.</td>
+                                </tr>
+                                <tr style="height: 24px;">
+                                    <td style="height: 24px;"><span style="color: #800080;">&ndash; package.json</span></td>
+                                    <td style="height: 24px;">A package.json file contains <strong>metadata</strong> about an app or module. It includes the list of <strong>dependencies</strong> so it&rsquo;s most important for the application.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                    </section>
+                    <!--Sub Modules-->
+                    <section id="head_css_structure">
+                        <div class="page-header">
+                            <h4>Sub-Modules</h4>
+                        </div>
+                        <p>The entire <b>Jobzilla – Job Board React Template</b> consists of three sub-modules or sub-templates, as follows:</p>
+                        <!-- Tab links -->
+                        <div class="tab">
+                            <button class="tablinks" onClick="showModule(event, 'public')" id="defaultOpen">Public-User Module</button>
+                            <button class="tablinks" onClick="showModule(event, 'member')">Member/Candidate Module</button>
+                            <button class="tablinks" onClick="showModule(event, 'admin')">Admin/Employer Module</button>
+                      </div>
+                      <!-- Tab content -->
+                      <div id="public" class="tabcontent">
+                          <img src="images/public-user.png" alt="">
+                      </div>
+
+                      <div id="member" class="tabcontent">
+                          <img src="images/member.png" alt="">
+                      </div>
+
+                      <div id="admin" class="tabcontent">
+                          <img src="images/admin.png" alt="">
+                      </div>
+                    </section>
+                    <!--Install-->
+                    <section id="head_css_structure">
+                        <div class="page-header">
+                            <h4>Installation</h4>
+                        </div>
+                        <p>This section guides you to <strong>install all required software and libraries</strong> to utilize Jobzilla react for your projects fully.</p>
+                    </section>
+                    <!--Node-->
+                    <section id="node-2">
+                        <div class="page-header">
+                            <h4>Node</h4>
+                        </div>
+                        <p>Node.js® is a <strong>JavaScript run time built</strong> on Chrome’s V8 JavaScript engine. Node.js is required to build the <strong>Jobzilla React</strong>. Download the latest version of Node and install it: Download <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">Nodejs</a></p>
+                    </section>
+                    <!--NPM-->
+                    <section id="npm-3">
+                        <div class="page-header">
+                            <h4>NPM</h4>
+                        </div>
+                        <p><strong>NPM</strong> is the <strong>package manager</strong> for JavaScript and the world’s largest software registry. NPM is a separate project from Node.js and tends to <strong>update</strong> more frequently. As a result, even if you’ve just downloaded Node.js (and therefore npm), you’ll probably need to <strong>update</strong> your NPM .</p>
+<pre class="line-numbers">
+<code class="language-markup"  style="color: #800080;">
+npm install --global npm@latest
+</code>
+</pre>
+                        <p>Verify that npm in successfully installed, and version of installed npm will appear</p>
+<pre class="line-numbers">
+<code class="language-markup"  style="color: #800080;">npm --version</code>
+</pre>
+                    </section>
+                    <!--React-->
+                    <section id="react">
+                        <div class="page-header">
+                            <h4>React</h4>
+                        </div>
+                        <strong style="font-size: 18px; margin-bottom: 20px; margin-top: 30px; display: block;">Installation</strong>
+                        <p>1. <strong>First</strong>, unzip the <strong>zip</strong> file that you have download from ThemeForest. You will find a Jobzilla-React-1.0 project folder.</p>
+                        <p>2. Then after <strong>Extract zip</strong> File (Jobzilla.zip) into a folder, you have to work within.</p>
+                        <p>3. Open a <strong>Node</strong> Prompt. Go to your <strong>Working Folder</strong>, And run the Following Command and wait for finish installation.</p>
+<pre class="line-numbers">
+<code class="language-markup"  style="color: #800080;">npm install</code>
+</pre>
+                        <p>4. This command will <strong>install</strong> all the required node module into node_module/ inside your working folder.</p>
+                        <p>5. You are ready to <strong>run</strong> the Jobzilla react application for the first time</p>
+                        <p>6. While still your working folder and <strong>run</strong> the following command</p>
+<pre class="line-numbers">
+<code class="language-markup"  style="color: #800080;">npm start</code>
+</pre>
+                        <strong style="font-size: 18px; margin-bottom: 20px; margin-top: 30px; display: block;">Deployment</strong>
+                        <p>Before the <strong>production</strong>, specify the production URL in <strong>package.json</strong> file with homepage attribute, see the below screenshot:</p>
+                        <p><img src="images/package-json.png" alt="" class="alignnone size-full wp-image-9661" width="" height=""></p>
+                        <p>Then after open <strong>node command prompt</strong> and go to the project directory. Type following command</p>
+<pre class="line-numbers">
+<code class="language-markup"  style="color: #800080;">npm run build</code>
+</pre>
+                        <p>Now, <strong>Build</strong> is Completed and <b>build </b>folder is created in your project root directory.</p>
+                        <p>Open after <strong>build folder</strong>&nbsp;and change in the <strong>index.html</strong> file.in this <strong>link&nbsp;tag</strong> in <strong>href</strong> attribute and <strong>script tag</strong> in <strong>src</strong> attribute both in add your server path.</p>
+                        <strong style="font-size: 18px; margin-bottom: 20px; margin-top: 30px; display: block;">Further help</strong>
+                        <p>To get more help : <a href="https://reactjs.org/docs/getting-started.html">https://reactjs.org/docs/getting-started.html</a></p>
+                    </div>
+                </section>
+                <!--Adding New Component-->
+                <section id="component">
+                    <div class="page-header">
+                        <h4>Adding New Component</h4>
+                    </div>
+                    <p>It’s easy to add your <strong>own custom component</strong> in this Jobzilla react application if needs. Please follow the <strong>below</strong> steps for that.</p>
+                    <p><strong>Step 1 :</strong></p>
+                    <p>
+                        &gt;&gt; Please <strong>go</strong> to src-&gt;comp-&gt;Sections path and <strong>create</strong> a new file.<br>
+                        &gt;&gt; Please refer <strong>below reference code</strong> or get a reference from the existing component which is already done in the project.
+                    </p>
+<pre class="line-numbers">
+<code class="language-css">
+import React, { Component } from &#x27;react&#x27;;
+
+class ComponentName extends Component {
+    
+    constructor(props) {
+        super(props);
+    }
+    
+    render() {
+        return (
+            &#x3C;div&#x3E;
+            // Component Code Here...
+            &#x3C;/div&#x3E;
+        );
+    }
+}
+export default ComponentName;
+</code>
+</pre>
+        <p><strong>Step 2:</strong> Now you can <strong>create</strong> a function for getting data or calculate data. Please refer below code.</p>
+<pre class="line-numbers">
+<code class="language-css">
+FunctionName(functionParam){
+    this.setState({
+        ... // Set The Value in Set useing Function
+    })
+    // Function Logic.
+}
+</code>
+</pre>
+<p><strong>Step 3:</strong> Function can be called by following ways.</p>
+<p><strong>&nbsp; &nbsp; &nbsp; 3.1</strong>&nbsp; If it needs to call function <strong>immediately</strong> after a <strong>component is mount</strong> then call the function as per below example.</p>
+<pre class="line-numbers">
+<code class="language-css">
+componentDidMount() {
+    ...
+    this.FunctionName();
+}
+</code>
+</pre>
+<p><strong>&nbsp; &nbsp; &nbsp; 3.2</strong> If it is need to call function once the <strong>component render</strong> then call the function as per below example.</p>
+<pre class="line-numbers">
+<code class="language-css">
+render() { 
+    return( 
+        &#x3C;div&#x3E; 
+        ... 
+        { this.FunctionName() }
+        &#x3C;/div&#x3E;
+    ) ;
+}
+</code>
+</pre>
+<p><strong>&nbsp; &nbsp; &nbsp; 3.3</strong> if it needs to call function with <strong>return data</strong> then it can be call by following way.</p>
+<pre class="line-numbers">
+<code class="language-css">
+render()
+    {
+        return(
+            &#x3C;div&#x3E;
+                ...
+                &#x3C;ComponentName functionreturn={ this.FunctionName() } /&#x3E;
+            &#x3C;/div&#x3E; 
+     );
+ }
+</code>
+</pre>
+</section>
+<!--Browser support-->
+<section id="browser-support">
+    <div class="page-header">
+        <h4>Browser support</h4>
+    </div>
+    <p><span>Jobzilla React Supported <strong>Multi-Browser</strong> Like Chrome, Internet Explorer 10+, Mozilla Firefox, Safari and Microsoft Edge.</span></p>
+</section>
+<!--Source & Credits-->
+<section id="Source_Credits">
+    <div class="page-header">
+        <h4>Source & Credits</h4>
+    </div>
+    <p>Below are the <strong>libraries/components</strong>, we have used in creating this template.</p>
+    <ul>
+        <li><a href="https://reactjs.org/">react 18.2.0</a></li>
+        <li><a href="https://www.npmjs.com/package/react-router-dom">react-router-dom 6.14.0</a></li>
+        <li><a href="https://www.npmjs.com/package/react-countup">react-countup 6.4.2</a></li>
+        <li><a href="https://www.chartjs.org">chart.js 4.4.0</a></li>
+        <li><a href="https://react-chartjs-2.js.org">react-chartjs-2 5.2.0</a></li>
+        <li><a href="https://www.npmjs.com/package/react-dropzone-component">react-dropzone-component 3.2.0</a></li>
+    </ul>
+</section>
+</article>
+<!-- END Main content -->
+</main>
+<!-- Footer -->
+<footer class="site-footer text-center">
+    <div class="container-fluid"> <a id="scroll-up" href="#"><i class="fa fa-angle-up"></i></a>
+        <p>Copyright &copy; 2023. All right reserved</p>
+    </div>
+</footer>
+<!-- END Footer -->
+<!-- Scripts -->
+<script src="js/jQuery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+<script>
+    document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
